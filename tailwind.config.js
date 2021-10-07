@@ -7,8 +7,13 @@ module.exports = {
 		colors: {
 			...colors,
 			transparent: 'transparent',
-			current: 'currentColor'
-		}
+			current: 'currentColor',
+			'blue-gray': colors.blueGray,
+			'cool-gray': colors.coolGray,
+		},
+		fontFamily: {
+			'montserrat': [ 'Montserrat','sans-serif' ],
+		},
 	},
 	variants: {
 		extend: {},

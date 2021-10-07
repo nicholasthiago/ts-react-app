@@ -12,7 +12,7 @@ import {
 
 import { Provider } from 'react-redux';
 
-import AppMenu from 'components/app-menu/app-menu.component';
+import AppMenu from 'components/app-menu';
 
 
 afterEach(cleanup);
