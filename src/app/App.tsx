@@ -5,6 +5,8 @@ import style from 'style';
 
 import AppMenu from 'components/app-menu';
 
+import Home from 'pages/home';
+
 import SignIn from 'pages/sign-in';
 import FirstAccess from 'pages/first-access';
 import CreateAccount from 'pages/create-account';
@@ -14,6 +16,8 @@ import CreateAccount from 'pages/create-account';
 const AuthRoutes = () => {
 	return (
 		<BrowserRouter>
+			<Route component={ Home }	path={'/home'} />
+
 			<Route component={ CreateAccount }	path={'/create-account'} />
 			<Route component={ SignIn }			path={'/sign-in'}		 />
 			<Route component={ FirstAccess }	path={'/'} exact		 />

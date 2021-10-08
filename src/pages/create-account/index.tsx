@@ -35,7 +35,7 @@ const CreateAccount = () => {
 	const history = useHistory();
 
 	const [ valid, setValid ] = useState<Boolean>( false );
-	const [ message, setMessage ] = useState<String>('');
+	const [ message, setMessage ] = useState<String | undefined>( undefined );
 	const [ accountData, setAccountData ] = useState<AccountData>(
 		{
 			name: '',
@@ -92,8 +92,11 @@ const CreateAccount = () => {
 			<h3 className={ style.error }> { message } </h3>
 
 			<button className={`${style.buttonMain} mt-4`}
-				// onMouseDown={ () => valid ? console.log( accountData ) : null }
-				onMouseDown={ () => console.log( valid, accountData ) }
+				onMouseDown={ () => 
+					( valid && message === '')
+					? console.log( valid, accountData )
+					: setMessage('some information is missing or invalid')
+				}
 			> {'Create account'} </button>
 
 			<span className={'flex flex-row gap-1 place-self-center'}>

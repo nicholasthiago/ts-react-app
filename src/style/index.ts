@@ -1,19 +1,19 @@
 // Style pattern classes
 
 export interface Style {
-	app			: string,
-	page		: string,
-	button		: string,
-	buttonMain	: string,
-	buttonSub	: string,
-	input		: string,
-	title		: string,
-	subtitle	: string,
-	body		: string,
-	small		: string,
-	link		: string,
-	message		: string,
-	error		: string,
+	app				: string,
+	page			: string,
+	button			: string,
+	buttonMain		: string,
+	buttonSub		: string,
+	input			: string,
+	title			: string,
+	subtitle		: string,
+	body			: string,
+	small			: string,
+	link			: string,
+	message			: string,
+	error			: string,
 };
 
 const style: Style = {
