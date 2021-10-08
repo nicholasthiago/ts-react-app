@@ -4,9 +4,9 @@ import { User, UserTypes } from './actions';
 import { RootState } from 'redux/store';
 
 export const initState: User = {
-	login		: '',
-	avatar_url	: '',
-	created_at	: '',
+	user		: '',
+	email		: '',
+	password	: '',
 };
 
 const userReducer: Reducer<User> = ( state=initState, action ) => {

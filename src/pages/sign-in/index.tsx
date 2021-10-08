@@ -4,7 +4,7 @@ import style from 'style';
 
 const SignIn = () => {
 
-	const history = useHistory(); // eslint-disable-line
+	const history = useHistory();
 
 	return (
 		<section className={`${ style.page } page-SignIn`}>
@@ -16,7 +16,7 @@ const SignIn = () => {
 
 			<h3 className={ `${ style.error } ml-2` }> {'feedback message'} </h3>
 
-			<button className={ style.buttonMain }> {'Sign in'} </button>
+			<button className={`${ style.buttonMain } mt-4`}> {'Sign in'} </button>
 
 			<span className={'flex flex-row gap-1 place-self-center'}>
 				<h4 className={ style.message }> {"Don't have account?"} </h4>

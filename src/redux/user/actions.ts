@@ -2,9 +2,9 @@ import { action } from 'typesafe-actions';
 
 // Types Declaration
 export interface User {
-	login		: string;
-	avatar_url	: string;
-	created_at	: string;
+	user		: string;
+	email		: string;
+	password	: string;
 }
 
 export interface UserState {
